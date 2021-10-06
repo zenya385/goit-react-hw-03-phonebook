@@ -12,9 +12,9 @@ class App extends Component {
   };
 
   componentDidMount() {
-    const users = localStorage.getItem("contacts");
-    if (users) {
-      const parseUsers = JSON.parse(users);
+    const contacts = localStorage.getItem("contacts");
+    if (contacts) {
+      const parseUsers = JSON.parse(contacts);
       this.setState({ contacts: parseUsers });
     }
   }
