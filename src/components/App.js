@@ -14,7 +14,6 @@ const App = () => {
 
   useEffect(() => {
     if (contacts.length > 0) {
-      console.log("сработал useEffect в IFFFF");
       localStorage.setItem("contacts", JSON.stringify(contacts));
     }
   }, [contacts]);
